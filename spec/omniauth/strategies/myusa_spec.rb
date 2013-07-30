@@ -1,13 +1,13 @@
 require 'spec_helper'
 
-describe OmniAuth::Strategies::Mygov do
+describe OmniAuth::Strategies::Myusa do
   subject do
-    OmniAuth::Strategies::Mygov.new({})
+    OmniAuth::Strategies::Myusa.new({})
   end
 
   context "client options" do
     it 'should have correct name' do
-      subject.options.name.should eq("mygov")
+      subject.options.name.should eq("myusa")
     end
 
     it 'should have correct site' do

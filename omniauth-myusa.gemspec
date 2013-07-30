@@ -1,16 +1,16 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'omniauth-mygov/version'
+require 'omniauth-myusa/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "omniauth-mygov"
-  gem.version       = Omniauth::Mygov::VERSION
+  gem.name          = "omniauth-myusa"
+  gem.version       = Omniauth::Myusa::VERSION
   gem.authors       = ["Greg Gershman"]
   gem.email         = ["gregory.gershman@gsa.gov"]
-  gem.description   = %q{OmniAuth strategy for MyGov.}
-  gem.summary       = %q{OmniAuth strategy for MyGov.}
-  gem.homepage      = "https://github.com/GSA-OCSIT/omniauth-mygov"
+  gem.description   = %q{OmniAuth strategy for MyUSA.}
+  gem.summary       = %q{OmniAuth strategy for MyUSA.}
+  gem.homepage      = "https://github.com/GSA-OCSIT/omniauth-myusa"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
