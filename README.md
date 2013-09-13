@@ -8,7 +8,7 @@ View the OmniAuth 1.0 docs for more information about strategy implementation: h
 
 ## Before You Begin
 
-Sign in into the [MyUSA developer](https://my.usa.gov/developer) and create an application. You will need to provide a redirect URI which is "YOUR_SITE/auth/myusa/callback" by default. Take note of your Consumer Key and Consumer Secret.
+Sign in to [MyUSA](https://my.usa.gov/developer) and register an application. You will need to provide a redirect URI which is "YOUR_SITE/auth/myusa/callback" by default. Take note of your Consumer Key and Consumer Secret.
 
 ## Using This Strategy
 
