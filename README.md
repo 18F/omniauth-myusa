@@ -21,10 +21,32 @@ gem 'omniauth-myusa', :git => 'https://github.com/GSA-OCSIT/omniauth-myusa.git'
 Next, tell OmniAuth about this provider. For a Rails app, your `config/initializers/omniauth.rb` file should look like this:
 
 ```ruby
-provider :myusa, "CONSUMER_KEY", "CONSUMER_SECRET", :scope => "profile tasks submit_forms notifications"
+provider :myusa, "CONSUMER_KEY", "CONSUMER_SECRET", :scope => "profile.email tasks submit_forms notifications"
 ```
 
-Replace CONSUMER_KEY and CONSUMER_SECRET with the appropriate values you obtained from [MyUSA](https://my.usa.gov/apps) earlier.
+Replace CONSUMER_KEY and CONSUMER_SECRET with the appropriate values you obtained from [MyUSA](https://my.usa.gov/apps) earlier. Valid scopes are:
+- profile.email
+- profile.title
+- profile.first_name
+- profile.middle_name
+- profile.last_name
+- profile.suffix
+- profile.address
+- profile.address2
+- profile.city
+- profile.state
+- profile.zip
+- profile.phone_number
+- profile.mobile_number
+- profile.gender
+- profile.marital_status
+- profile.is_parent
+- profile.is_student
+- profile.is_veteran
+- profile.is_retired
+- tasks
+- notifications
+- submit_forms
 
 ## Authentication Hash
 An example auth hash available in `request.env['omniauth.auth']`:
