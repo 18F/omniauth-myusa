@@ -5,19 +5,13 @@ require 'yaml'
 set :run, false
 set :raise_errors, true
 
-log = File.new("app.log", "a+")
-$stdout.reopen(log)
-$stderr.reopen(log)
-$stdout.sync = true
-$stderr.sync = true
-
 get '/' do
   content_type 'text/html'
   <<-END
 <html>
   <body>
     <p>
-      <a href="/auth/myusa">auth with io</a>
+      <a href="/auth/myusa">Auth with MyUSA</a>
     </p>
   </body>
 </html>
