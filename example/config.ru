@@ -9,7 +9,7 @@ use Rack::Session::Cookie, :secret => 'secret'
 # to set up a dummy app that points to a dev/staging version of myusa, add:
 #     :client_options => {
 #       :site => 'http://example.com',
-#       :token_url => '/oauth/authorize'
+#       :token_url => '/oauth/token'
 #     }
 # to `provider :myusa ...`
 #
