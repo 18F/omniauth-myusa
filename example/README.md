@@ -20,9 +20,7 @@ To set up a client application that points to a dev/staging version of MyUSA:
   }
   ```
   where `:scope => %q(...)` is a space separated list of scopes that the client
-  application will request. If it is left out (or is blank), the client
-  application will not request any scopes and the authorization page will be
-  skipped.
+  application will request. 
 
 3. Uncomment the following line in `config.ru` and set the correct url for this
 dummy app (it will default to `http://localhost:9292`):
