@@ -10,8 +10,10 @@ get '/' do
   <<-END
 <html>
   <body>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='//s3.amazonaws.com/myusa-static/button.min.css' rel='stylesheet' type='text/css'>
     <p>
-      <a href="/auth/myusa">Auth with MyUSA</a>
+      <a href="/auth/myusa" class="btn btn-social btn-myusa">Connect with MyUSA</a>
     </p>
   </body>
 </html>
