@@ -1,6 +1,7 @@
 # OmniAuth MyUSA Example Application
 
 To set up a client application that points to a dev/staging version of MyUSA:
+
 1. Create a client application in MyUSA at `http://<myusa host:port>/oauth/applications`.
 
 2. Copy the application id and secret and set them as environment variables:
