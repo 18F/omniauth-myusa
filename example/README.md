@@ -2,15 +2,33 @@
 
 To set up a client application that points to a dev/staging version of MyUSA:
 
-1. Create a client application in MyUSA at `http://<myusa host:port>/oauth/applications`.
+1. Ensure you have Ruby installed - version 2.0 or greater.
 
-2. Copy the application id and secret and set them as environment variables:
+1. Install the Bundler gem:
+  ```bash
+  $ gem install bundler
+  ```
+  
+1. Clone this repository locally and change to the `example` folder:
+   ```bash
+   $ git clone https://github.com/18F/omniauth-myusa/
+   $ cd omniauth-myusa/example
+   ```
+
+1. Use `bundle` to install the necessary dependencies:
+   ```bash
+   $ bundle install
+   ```
+
+1. Register a new client application with MyUSA at `https://my.usa.gov/oauth/applications`
+
+1. Copy the application id and secret and set them as environment variables:
   ```bash
   $ export APP_ID=...
   $ export APP_SECRET=...
   ```
 
-2. Add the following to the `provider` call in `config.ru`:
+1. Add the following to the `provider` call in `config.ru`:
   ```ruby
   provider :myusa, ENV['APP_ID'], ENV['APP_SECRET'], {
     scope: %q(...),
@@ -23,13 +41,13 @@ To set up a client application that points to a dev/staging version of MyUSA:
   where `:scope => %q(...)` is a space separated list of scopes that the client
   application will request. 
 
-3. Uncomment the following line in `config.ru` and set the correct url for this
+1. Uncomment the following line in `config.ru` and set the correct url for this
 dummy app (it will default to `http://localhost:9292`):
   ```ruby
   OmniAuth.config.full_host = "http://<dummy host:port>"
   ```
 
-4. Run the dummy app:
+1. Run the dummy app:
   ```bash
   $ rackup
   ```
