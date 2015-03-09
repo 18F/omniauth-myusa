@@ -20,7 +20,7 @@ To set up a client application that points to a dev/staging version of MyUSA:
    $ bundle install
    ```
 
-1. Register a new client application with MyUSA at `https://my.usa.gov/oauth/applications`
+1. Register a new client application with MyUSA at `https://my.usa.gov/apps/new`
 
 1. Copy the application id and secret and set them as environment variables:
   ```bash
