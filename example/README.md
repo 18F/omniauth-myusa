@@ -8,7 +8,7 @@ To set up a client application that points to a dev/staging version of MyUSA:
   ```bash
   $ gem install bundler
   ```
-  
+
 1. Clone this repository locally and change to the `example` folder:
    ```bash
    $ git clone https://github.com/18F/omniauth-myusa/
@@ -21,6 +21,8 @@ To set up a client application that points to a dev/staging version of MyUSA:
    ```
 
 1. Register a new client application with MyUSA at `https://my.usa.gov/oauth/applications`
+  1. Set **Url** to `http://localhost:9292`
+  2. Set **Redirect Uri** to `http://localhost:9292/auth/myusa/callback`
 
 1. Copy the application id and secret and set them as environment variables:
   ```bash
@@ -39,7 +41,7 @@ To set up a client application that points to a dev/staging version of MyUSA:
   }
   ```
   where `:scope => %q(...)` is a space separated list of scopes that the client
-  application will request. 
+  application will request.
 
 1. Uncomment the following line in `config.ru` and set the correct url for this
 dummy app (it will default to `http://localhost:9292`):
