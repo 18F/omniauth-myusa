@@ -6,7 +6,7 @@ require 'omniauth-myusa/version'
 Gem::Specification.new do |gem|
   gem.name          = "omniauth-myusa"
   gem.version       = Omniauth::Myusa::VERSION
-  gem.authors       = ["Greg Gershman"]
+  gem.authors       = ["Greg Gershman", "Christopher Papazian"]
   gem.email         = ["gregory.gershman@gsa.gov"]
   gem.description   = %q{OmniAuth strategy for MyUSA.}
   gem.summary       = %q{OmniAuth strategy for MyUSA.}
@@ -16,7 +16,7 @@ Gem::Specification.new do |gem|
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
-  
+
   gem.add_dependency 'omniauth', '~> 1.0'
   gem.add_dependency 'omniauth-oauth2', '~> 1.0'
 end
