@@ -18,5 +18,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
 
   gem.add_dependency 'omniauth', '~> 1.0'
-  gem.add_dependency 'omniauth-oauth2', '~> 1.0'
+  # oauth2 gem locked hard at pre-1.4.0 because 1.4.0 breaks.
+  # See comments on https://github.com/intridea/omniauth-oauth2/commit/26152673224aca5c3e918bcc83075dbb0659717f
+  gem.add_dependency 'omniauth-oauth2', '1.3.1'
 end

@@ -11,7 +11,7 @@ describe OmniAuth::Strategies::Myusa do
     end
 
     it 'should have correct site' do
-      subject.options.client_options.site.should eq('https://my.usa.gov')
+      subject.options.client_options.site.should eq('https://alpha.my.usa.gov')
     end
 
     it 'should have correct token url' do
