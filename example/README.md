@@ -57,3 +57,12 @@ dummy app (it will default to `http://localhost:9292`):
   ```bash
   $ rackup -D
   ```
+  
+## Deploying to Cloud Foundry (experimental)
+
+```
+cf push myusa-consumer
+cf set-env myusa-consumer APP_ID the_app_id
+cf set-env myusa-consumer APP_SECRET the_app_secret
+cf push myusa-consumer
+```
